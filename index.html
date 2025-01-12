@@ -1,28 +1,57 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Hazards Near Me</title> 
-</head> 
-<body> 
-    <h1>Hazards Near Me!</h1> 
-    <iframe 
-    title="Los Angeles AQI" 
-    src="https://widget.airnow.gov/aq-dial-widget/?city=Los Angeles&state=CA&country=USA" 
-    class="responsive-iframe">
-    </iframe>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us" data-label_1="LOS ANGELES" data-label_2="WEATHER" data-font="Monaco" data-theme="weather_one" >LOS ANGELES WEATHER</a>
-    <script>
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script>
-    <p>Maps of hazards in Los Angeles County:</p> 
-    <a href=  "Final_Interactive_Map_With_Toggles_And_Clusters%20(1).html">Oil Well Map</a>
-    <a href= "la_county_oil_refineries_updated_map.html">Oil Refineries Map</a>
-    <a href= "interactive_map_los_angeles_decades.html">Wildfires Through The Decades Map</a>
-    <a href= "Updated_Superfund_Sites_Map.html">EPA Superfund Sites Map (Hazardous Waste)</a>
-    <a href= "Hazardous_Waste_Sites_Enhanced_Map.html">General Toxic Substance Control Records Map (Hazardous Waste)</a>
+<!DOCTYPE html>
+<html lang="en">
 
-</body> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore hazards near Los Angeles, including air quality, weather, and various environmental maps.">
+    <meta property="og:title" content="Hazards Near Me!">
+    <meta property="og:description" content="Interactive maps and widgets showcasing hazards around Los Angeles.">
+    <meta property="og:image" content="preview-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Hazards Near Me</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hazards Near Me</h1>
+    </header>
+
+    <main>
+        <section class="widgets">
+            <h2>Live Updates</h2>
+            <iframe 
+                title="Los Angeles AQI" 
+                src="https://widget.airnow.gov/aq-dial-widget/?city=Los Angeles&state=CA&country=USA" 
+                class="responsive-iframe">
+            </iframe>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us" 
+               data-label_1="LOS ANGELES" data-label_2="WEATHER" data-font="Monaco" data-theme="weather_one">
+               LOS ANGELES WEATHER
+            </a>
+        </section>
+
+        <section class="maps">
+            <h2>Explore Hazard Maps</h2>
+            <nav>
+                <ul>
+                    <li><a href="Final_Interactive_Map_With_Toggles_And_Clusters%20(1).html">Oil Well Map</a></li>
+                    <li><a href="la_county_oil_refineries_updated_map.html">Oil Refineries Map</a></li>
+                    <li><a href="interactive_map_los_angeles_decades.html">Wildfires Through The Decades Map</a></li>
+                    <li><a href="Updated_Superfund_Sites_Map.html">EPA Superfund Sites Map</a></li>
+                    <li><a href="Hazardous_Waste_Sites_Enhanced_Map.html">General Toxic Substance Control Records Map</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hazards Near Me. All rights reserved.</p>
+    </footer>
+
+    <script src="https://weatherwidget.io/js/widget.min.js"></script>
+</body>
+
 </html>
