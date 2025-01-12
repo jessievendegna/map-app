@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d4a0e80de0dbaed316ae3395f91a253 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d4a0e80de0dbaed316ae3395f91a253" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d4a0e80de0dbaed316ae3395f91a253 = L.map(
+                "map_2d4a0e80de0dbaed316ae3395f91a253",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e3e4e442880e07cc1a5d2c8e7f08fa1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+            var marker_06119f13870729b05be6fe48cf73ef6c = L.marker(
+                [33.77309000000002, -118.28704999999995],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_aa6010f1cbefaeaab98dd5722a3bb498 = L.popup({"maxWidth": 300});
+
+        
+            var html_8af86f566e2cae251fc2beb985e1f327 = $(`<div id="html_8af86f566e2cae251fc2beb985e1f327" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> WILMINGTON<br>     <b>Address:</b> 1660 W. ANAHEIM STREET<br>     <b>City:</b> WILMINGTON<br>     <b>State:</b> CA<br>     <b>Owner:</b> PHILLIPS 66 COMPANY<br>     <b>Operator:</b> PHILLIPS 66 COMPANY     </div>`)[0];
+            popup_aa6010f1cbefaeaab98dd5722a3bb498.setContent(html_8af86f566e2cae251fc2beb985e1f327);
+        
+
+        marker_06119f13870729b05be6fe48cf73ef6c.bindPopup(popup_aa6010f1cbefaeaab98dd5722a3bb498)
+        ;
+
+        
+    
+    
+            var marker_c93a273acf75503771707d4a8934b871 = L.marker(
+                [33.91022000000003, -118.40948999999995],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_ffc6a1d4888cbcf6c4e0206d80cd1e6e = L.popup({"maxWidth": 300});
+
+        
+            var html_ab9cc6ea6e8189ef4ad7fdfefb6f1170 = $(`<div id="html_ab9cc6ea6e8189ef4ad7fdfefb6f1170" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> EL SEGUNDO<br>     <b>Address:</b> 324 W EL SEGUNDO BLVD<br>     <b>City:</b> EL SEGUNDO<br>     <b>State:</b> CA<br>     <b>Owner:</b> CHEVRON CORP<br>     <b>Operator:</b> CHEVRON USA INC     </div>`)[0];
+            popup_ffc6a1d4888cbcf6c4e0206d80cd1e6e.setContent(html_ab9cc6ea6e8189ef4ad7fdfefb6f1170);
+        
+
+        marker_c93a273acf75503771707d4a8934b871.bindPopup(popup_ffc6a1d4888cbcf6c4e0206d80cd1e6e)
+        ;
+
+        
+    
+    
+            var marker_193d5766dad9dc67e631385883934518 = L.marker(
+                [33.815350000000024, -118.24101999999998],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_211079eff47686d5cb18c88af6e147e7 = L.popup({"maxWidth": 300});
+
+        
+            var html_4f9164db0fc8e9395a3caf6f84992a39 = $(`<div id="html_4f9164db0fc8e9395a3caf6f84992a39" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> LOS ANGELES (CARSON PLANT)<br>     <b>Address:</b> 1801 E SEPULVEDA BLVD<br>     <b>City:</b> CARSON<br>     <b>State:</b> CA<br>     <b>Owner:</b> MARATHON PETROLEUM CORP<br>     <b>Operator:</b> MARATHON PETROLEUM CO LP     </div>`)[0];
+            popup_211079eff47686d5cb18c88af6e147e7.setContent(html_4f9164db0fc8e9395a3caf6f84992a39);
+        
+
+        marker_193d5766dad9dc67e631385883934518.bindPopup(popup_211079eff47686d5cb18c88af6e147e7)
+        ;
+
+        
+    
+    
+            var marker_7ed93c2a9bc772fb63c2cccd61629ee1 = L.marker(
+                [33.797600000000045, -118.23924999999998],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_c7132772fda83aa1a4a7c824a0e658e0 = L.popup({"maxWidth": 300});
+
+        
+            var html_238f8f7e3e7364c86ab17453a73fe780 = $(`<div id="html_238f8f7e3e7364c86ab17453a73fe780" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> WILMINGTON ASPHALT PLANT<br>     <b>Address:</b> 1651 S ALAMEDA STREET<br>     <b>City:</b> WILMINGTON<br>     <b>State:</b> CA<br>     <b>Owner:</b> VALERO ENERGY CORP<br>     <b>Operator:</b> VALERO REFINING CO CALIFORNIA     </div>`)[0];
+            popup_c7132772fda83aa1a4a7c824a0e658e0.setContent(html_238f8f7e3e7364c86ab17453a73fe780);
+        
+
+        marker_7ed93c2a9bc772fb63c2cccd61629ee1.bindPopup(popup_c7132772fda83aa1a4a7c824a0e658e0)
+        ;
+
+        
+    
+    
+            var marker_509fab768c118846637ad7b61d6853a7 = L.marker(
+                [33.898720000000026, -118.14658999999996],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_c591c7934651d8491c300a20d3fdcdaa = L.popup({"maxWidth": 300});
+
+        
+            var html_ad8647cfd13edd1cd444bcc30a907354 = $(`<div id="html_ad8647cfd13edd1cd444bcc30a907354" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> PARAMOUNT<br>     <b>Address:</b> 14700 DOWNEY AVENUE<br>     <b>City:</b> PARAMOUNT<br>     <b>State:</b> CA<br>     <b>Owner:</b> ALON ISRAEL OIL COMPANY LTD<br>     <b>Operator:</b> PARAMOUNT PETROLEUM CORPORATION     </div>`)[0];
+            popup_c591c7934651d8491c300a20d3fdcdaa.setContent(html_ad8647cfd13edd1cd444bcc30a907354);
+        
+
+        marker_509fab768c118846637ad7b61d6853a7.bindPopup(popup_c591c7934651d8491c300a20d3fdcdaa)
+        ;
+
+        
+    
+    
+            var marker_c7048d2ed689a2f00bb088004519483a = L.marker(
+                [33.85271000000006, -118.33025999999995],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_3dc62e8b0170b63c7d3e12eaff7c7bde = L.popup({"maxWidth": 300});
+
+        
+            var html_168673c16fb5601cb2037aab8c74c4e7 = $(`<div id="html_168673c16fb5601cb2037aab8c74c4e7" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> TORRANCE<br>     <b>Address:</b> 3700 W 190TH STREET<br>     <b>City:</b> TORRANCE<br>     <b>State:</b> CA<br>     <b>Owner:</b> PBF ENERGY CO LLC<br>     <b>Operator:</b> TORRANCE REFINING CO LLC     </div>`)[0];
+            popup_3dc62e8b0170b63c7d3e12eaff7c7bde.setContent(html_168673c16fb5601cb2037aab8c74c4e7);
+        
+
+        marker_c7048d2ed689a2f00bb088004519483a.bindPopup(popup_3dc62e8b0170b63c7d3e12eaff7c7bde)
+        ;
+
+        
+    
+    
+            var marker_7b06294e2797660e659b2b574f9e4e5f = L.marker(
+                [33.79637000000002, -118.23296999999997],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_650cba57dc84aca191e76df167ef1613 = L.popup({"maxWidth": 300});
+
+        
+            var html_5fb22ec5323488b881b464181accf3af = $(`<div id="html_5fb22ec5323488b881b464181accf3af" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> LOS ANGELES (WILMINGTON PLANT)<br>     <b>Address:</b> 2101 E PACIFIC COAST HIGHWAY<br>     <b>City:</b> WILMINGTON<br>     <b>State:</b> CA<br>     <b>Owner:</b> MARATHON PETROLEUM CORP<br>     <b>Operator:</b> MARATHON PETROLEUM CO LP     </div>`)[0];
+            popup_650cba57dc84aca191e76df167ef1613.setContent(html_5fb22ec5323488b881b464181accf3af);
+        
+
+        marker_7b06294e2797660e659b2b574f9e4e5f.bindPopup(popup_650cba57dc84aca191e76df167ef1613)
+        ;
+
+        
+    
+    
+            var marker_bea683a2c61bac072bc5de5c2caa8cab = L.marker(
+                [33.94630000000005, -118.16703999999997],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_6f506e03b0025a0d4ad8ade5995dcd82 = L.popup({"maxWidth": 300});
+
+        
+            var html_c5ebef371943139fd9bced759d4ed633 = $(`<div id="html_c5ebef371943139fd9bced759d4ed633" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> SOUTH GATE<br>     <b>Address:</b> 9302 GARFIELD AVENUE<br>     <b>City:</b> SOUTH GATE<br>     <b>State:</b> CA<br>     <b>Owner:</b> WORLD OIL CO<br>     <b>Operator:</b> LUNDAY THAGARD CO     </div>`)[0];
+            popup_6f506e03b0025a0d4ad8ade5995dcd82.setContent(html_c5ebef371943139fd9bced759d4ed633);
+        
+
+        marker_bea683a2c61bac072bc5de5c2caa8cab.bindPopup(popup_6f506e03b0025a0d4ad8ade5995dcd82)
+        ;
+
+        
+    
+    
+            var marker_38bc3740656e635305f77a19e3910ff5 = L.marker(
+                [33.77884000000005, -118.23506999999994],
+                {}
+            ).addTo(map_2d4a0e80de0dbaed316ae3395f91a253);
+        
+    
+        var popup_63975c4fce7f21ce93f333cfa1f08e2d = L.popup({"maxWidth": 300});
+
+        
+            var html_06c7bec18759b9906c9437e699f25d3c = $(`<div id="html_06c7bec18759b9906c9437e699f25d3c" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> WILMINGTON<br>     <b>Address:</b> 2402 EAST ANAHEIM<br>     <b>City:</b> WILMINGTON<br>     <b>State:</b> CA<br>     <b>Owner:</b> VALERO ENERGY CORP<br>     <b>Operator:</b> VALERO REFINING CO CALIFORNIA     </div>`)[0];
+            popup_63975c4fce7f21ce93f333cfa1f08e2d.setContent(html_06c7bec18759b9906c9437e699f25d3c);
+        
+
+        marker_38bc3740656e635305f77a19e3910ff5.bindPopup(popup_63975c4fce7f21ce93f333cfa1f08e2d)
+        ;
+
+        
+    
+</script>
+</html>
