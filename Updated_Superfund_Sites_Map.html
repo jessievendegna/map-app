@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7a9f12ace2d21a099531cce1283de60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7a9f12ace2d21a099531cce1283de60" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7a9f12ace2d21a099531cce1283de60 = L.map(
+                "map_e7a9f12ace2d21a099531cce1283de60",
+                {
+                    center: [34.0336242, -118.1053214],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c914a1352b7b36f66a7db4cf2e60e85 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+            var marker_dbf2c9467fd8233c979153d5a9657f04 = L.marker(
+                [34.0336242, -118.1053214],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_a18492b4dd73229a36df69d2b5229a79 = L.popup({"maxWidth": 300});
+
+        
+            var html_aadde2931ba830ffb3e41aa4cd3ae1ea = $(`<div id="html_aadde2931ba830ffb3e41aa4cd3ae1ea" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Operating Industries Incorporated<br><b>History:</b> The OII Landfill operated from 1948 to 1984, accepting industrial and municipal waste. Contamination from disposal practices led to soil and groundwater contamination, including volatile organic compounds (VOCs) and other hazardous substances. The site was added to the National Priorities List (NPL) in 1986, with remediation efforts including landfill capping, gas collection systems, and groundwater treatment.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19125' target='_blank'>More Info</a></div>`)[0];
+            popup_a18492b4dd73229a36df69d2b5229a79.setContent(html_aadde2931ba830ffb3e41aa4cd3ae1ea);
+        
+
+        marker_dbf2c9467fd8233c979153d5a9657f04.bindPopup(popup_a18492b4dd73229a36df69d2b5229a79)
+        ;
+
+        
+    
+    
+            marker_dbf2c9467fd8233c979153d5a9657f04.bindTooltip(
+                `<div>
+                     Operating Industries Incorporated
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f98c2068d4a846e119169e5ab76791a = L.marker(
+                [34.199992, -118.1727003],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_085b52f2e4908e34175876a685485e9c = L.popup({"maxWidth": 300});
+
+        
+            var html_ed6951d30ae86f171d0f0870892ea4e9 = $(`<div id="html_ed6951d30ae86f171d0f0870892ea4e9" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Nasa Jet Propulsion Laboratory<br><b>History:</b> JPL has been operational since the 1930s, focusing on rocket propulsion and space exploration. Waste disposal practices in the 1940s and 1950s caused groundwater contamination with chemicals such as VOCs and perchlorate. The site was listed on the NPL in 1992. Cleanup efforts by NASA include extensive groundwater remediation.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19126' target='_blank'>More Info</a></div>`)[0];
+            popup_085b52f2e4908e34175876a685485e9c.setContent(html_ed6951d30ae86f171d0f0870892ea4e9);
+        
+
+        marker_3f98c2068d4a846e119169e5ab76791a.bindPopup(popup_085b52f2e4908e34175876a685485e9c)
+        ;
+
+        
+    
+    
+            marker_3f98c2068d4a846e119169e5ab76791a.bindTooltip(
+                `<div>
+                     Nasa Jet Propulsion Laboratory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d023f82bf33185de060073c99b8698f9 = L.marker(
+                [33.9476833, -118.1802152],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_4e2b1dabd54f25667bf86050bc1be23d = L.popup({"maxWidth": 300});
+
+        
+            var html_9e6c21ce1fe53e578061729f30361f41 = $(`<div id="html_9e6c21ce1fe53e578061729f30361f41" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Cooper Drum Company<br><b>History:</b> The Cooper Drum Company reconditioned used steel drums from 1974 to 1992. Residual waste contamination, primarily with volatile organic compounds (VOCs), affected soils and groundwater. The site was placed on the NPL in 2001, and a $22 million cleanup settlement was reached for remediation.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19127' target='_blank'>More Info</a></div>`)[0];
+            popup_4e2b1dabd54f25667bf86050bc1be23d.setContent(html_9e6c21ce1fe53e578061729f30361f41);
+        
+
+        marker_d023f82bf33185de060073c99b8698f9.bindPopup(popup_4e2b1dabd54f25667bf86050bc1be23d)
+        ;
+
+        
+    
+    
+            marker_d023f82bf33185de060073c99b8698f9.bindTooltip(
+                `<div>
+                     Cooper Drum Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffd74215c7e1d02731c4dc2e7b8fa69a = L.marker(
+                [33.9695626, -118.0437137],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_143c12b034edc6e8cab88d91844d2f70 = L.popup({"maxWidth": 300});
+
+        
+            var html_7f6ac908362dd0b4eb8a861db4fc03f8 = $(`<div id="html_7f6ac908362dd0b4eb8a861db4fc03f8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Omega Chemical Site Prp Org Gp<br><b>History:</b> The Omega Chemical Corporation operated as a refrigerant and solvent recycling facility from 1976 to 1991. Improper waste handling led to soil and groundwater contamination with solvents and other industrial chemicals. The site was added to the NPL in 1999. Cleanup included the removal of contaminants from soil and groundwater, funded by settlements with responsible parties.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19128' target='_blank'>More Info</a></div>`)[0];
+            popup_143c12b034edc6e8cab88d91844d2f70.setContent(html_7f6ac908362dd0b4eb8a861db4fc03f8);
+        
+
+        marker_ffd74215c7e1d02731c4dc2e7b8fa69a.bindPopup(popup_143c12b034edc6e8cab88d91844d2f70)
+        ;
+
+        
+    
+    
+            marker_ffd74215c7e1d02731c4dc2e7b8fa69a.bindTooltip(
+                `<div>
+                     Omega Chemical Site Prp Org Gp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47909604486ce6a2ac7eabe84e7c6d59 = L.marker(
+                [33.9859248, -118.1727723],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_844fa212878702ee644d5ed026ce05b8 = L.popup({"maxWidth": 300});
+
+        
+            var html_7c334763aff4eef9582b5529df86ef0f = $(`<div id="html_7c334763aff4eef9582b5529df86ef0f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Pemaco Incorporated<br><b>History:</b> Pemaco operated a chemical mixing facility from the late 1940s until 1991. Operations contaminated soil and groundwater with volatile organic compounds (VOCs). The site was proposed for the NPL in 1998. Cleanup efforts by the EPA included emergency cleanups and redevelopment into the Maywood Riverfront Park.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19129' target='_blank'>More Info</a></div>`)[0];
+            popup_844fa212878702ee644d5ed026ce05b8.setContent(html_7c334763aff4eef9582b5529df86ef0f);
+        
+
+        marker_47909604486ce6a2ac7eabe84e7c6d59.bindPopup(popup_844fa212878702ee644d5ed026ce05b8)
+        ;
+
+        
+    
+    
+            marker_47909604486ce6a2ac7eabe84e7c6d59.bindTooltip(
+                `<div>
+                     Pemaco Incorporated
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d8826be241f408a1cf7f8586cf90456 = L.marker(
+                [33.950509, -118.0555158],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_f3c85b9aeed6e255c6804d050154bdfe = L.popup({"maxWidth": 300});
+
+        
+            var html_8944871a48a0abceb50e274535443102 = $(`<div id="html_8944871a48a0abceb50e274535443102" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Waste Disposal Incorporated<br><b>History:</b> The Waste Disposal Incorporated (WDI) site operated as a waste disposal facility from 1959 to 1972, accepting industrial and chemical wastes. Improper disposal practices led to soil and groundwater contamination with hazardous substances, including volatile organic compounds (VOCs) and heavy metals. The site was added to the National Priorities List (NPL) in 1986 due to significant environmental hazards. Remediation has included soil excavation, groundwater treatment, and long-term monitoring.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19130' target='_blank'>More Info</a></div>`)[0];
+            popup_f3c85b9aeed6e255c6804d050154bdfe.setContent(html_8944871a48a0abceb50e274535443102);
+        
+
+        marker_4d8826be241f408a1cf7f8586cf90456.bindPopup(popup_f3c85b9aeed6e255c6804d050154bdfe)
+        ;
+
+        
+    
+    
+            marker_4d8826be241f408a1cf7f8586cf90456.bindTooltip(
+                `<div>
+                     Waste Disposal Incorporated
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55d6a91e7d0ed3fe6a902e3321f7dc00 = L.marker(
+                [34.0162402, -117.9529487],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_3c9ceb0647dfdd18842846c5b8cb0b5e = L.popup({"maxWidth": 300});
+
+        
+            var html_72fab52614f24e2c8a60d1cf01a37b05 = $(`<div id="html_72fab52614f24e2c8a60d1cf01a37b05" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Gabriel Valley (Area 4)<br><b>History:</b> The San Gabriel Valley encompasses multiple areas where industrial activities led to widespread groundwater contamination. The primary contaminants include VOCs, perchlorate, and other industrial chemicals affecting the aquifer, a crucial drinking water source for over one million residents. Four areas within the valley were designated as Superfund sites in the 1980s. Cleanup actions involve groundwater extraction and treatment systems, with ongoing efforts to monitor and remediate contamination.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19131' target='_blank'>More Info</a></div>`)[0];
+            popup_3c9ceb0647dfdd18842846c5b8cb0b5e.setContent(html_72fab52614f24e2c8a60d1cf01a37b05);
+        
+
+        marker_55d6a91e7d0ed3fe6a902e3321f7dc00.bindPopup(popup_3c9ceb0647dfdd18842846c5b8cb0b5e)
+        ;
+
+        
+    
+    
+            marker_55d6a91e7d0ed3fe6a902e3321f7dc00.bindTooltip(
+                `<div>
+                     San Gabriel Valley (Area 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_525879b55bb5d0cebdedd5d2e9a80b59 = L.marker(
+                [34.100032, -118.125003],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_e486ce44521b3dc946805d8e6d587fd7 = L.popup({"maxWidth": 300});
+
+        
+            var html_cff224939adcc11f830d1ddd6894af70 = $(`<div id="html_cff224939adcc11f830d1ddd6894af70" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Gabriel Valley (Area 3)<br><b>History:</b> The San Gabriel Valley encompasses multiple areas where industrial activities led to widespread groundwater contamination. The primary contaminants include VOCs, perchlorate, and other industrial chemicals affecting the aquifer, a crucial drinking water source for over one million residents. Four areas within the valley were designated as Superfund sites in the 1980s. Cleanup actions involve groundwater extraction and treatment systems, with ongoing efforts to monitor and remediate contamination.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19132' target='_blank'>More Info</a></div>`)[0];
+            popup_e486ce44521b3dc946805d8e6d587fd7.setContent(html_cff224939adcc11f830d1ddd6894af70);
+        
+
+        marker_525879b55bb5d0cebdedd5d2e9a80b59.bindPopup(popup_e486ce44521b3dc946805d8e6d587fd7)
+        ;
+
+        
+    
+    
+            marker_525879b55bb5d0cebdedd5d2e9a80b59.bindTooltip(
+                `<div>
+                     San Gabriel Valley (Area 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c26307a4bea3cadf25ff5405513cd1a5 = L.marker(
+                [34.098126, -117.9522438],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_3ff7c721faa42cc958a1a3d782c6a5b8 = L.popup({"maxWidth": 300});
+
+        
+            var html_6a7ee6f53b59fc7774ef94bc94c99363 = $(`<div id="html_6a7ee6f53b59fc7774ef94bc94c99363" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Gabriel Valley (Area 2)<br><b>History:</b> The San Gabriel Valley encompasses multiple areas where industrial activities led to widespread groundwater contamination. The primary contaminants include VOCs, perchlorate, and other industrial chemicals affecting the aquifer, a crucial drinking water source for over one million residents. Four areas within the valley were designated as Superfund sites in the 1980s. Cleanup actions involve groundwater extraction and treatment systems, with ongoing efforts to monitor and remediate contamination.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19133' target='_blank'>More Info</a></div>`)[0];
+            popup_3ff7c721faa42cc958a1a3d782c6a5b8.setContent(html_6a7ee6f53b59fc7774ef94bc94c99363);
+        
+
+        marker_c26307a4bea3cadf25ff5405513cd1a5.bindPopup(popup_3ff7c721faa42cc958a1a3d782c6a5b8)
+        ;
+
+        
+    
+    
+            marker_c26307a4bea3cadf25ff5405513cd1a5.bindTooltip(
+                `<div>
+                     San Gabriel Valley (Area 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55a3840b487457dc6d073a691c4700f8 = L.marker(
+                [33.84856967, -118.30021201],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_00a8a8bb5a842e5d40bd6942b4555949 = L.popup({"maxWidth": 300});
+
+        
+            var html_03a64a32f2995773235af6c3282b5a45 = $(`<div id="html_03a64a32f2995773235af6c3282b5a45" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Montrose Chemical (Montrose Superfund Site)<br><b>History:</b> Montrose Chemical Corporation operated from 1947 to 1982, producing the insecticide DDT. Manufacturing operations resulted in significant soil and groundwater contamination with DDT and other hazardous chemicals. The site was added to the NPL in 1989 due to extensive contamination. Remediation includes soil cleanup, groundwater treatment, and addressing offshore contamination on the Palos Verdes Shelf.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19134' target='_blank'>More Info</a></div>`)[0];
+            popup_00a8a8bb5a842e5d40bd6942b4555949.setContent(html_03a64a32f2995773235af6c3282b5a45);
+        
+
+        marker_55a3840b487457dc6d073a691c4700f8.bindPopup(popup_00a8a8bb5a842e5d40bd6942b4555949)
+        ;
+
+        
+    
+    
+            marker_55a3840b487457dc6d073a691c4700f8.bindTooltip(
+                `<div>
+                     Montrose Chemical (Montrose Superfund Site)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09a44569111062372dd699e340654984 = L.marker(
+                [34.2044361, -118.2261851],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_21310e76222a5b0d1ba73d5634e85406 = L.popup({"maxWidth": 300});
+
+        
+            var html_e03fdff83ab469438ed808299fcc03c9 = $(`<div id="html_e03fdff83ab469438ed808299fcc03c9" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Fernando Valley (Area 3)<br><b>History:</b> The San Fernando Valley has a history of industrial and commercial activities leading to groundwater contamination. The groundwater is contaminated with VOCs and other industrial solvents, impacting local water supplies. Four areas within the valley were designated as Superfund sites in the 1980s. Efforts include groundwater extraction and treatment, soil vapor extraction, and ongoing monitoring to protect public health.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19135' target='_blank'>More Info</a></div>`)[0];
+            popup_21310e76222a5b0d1ba73d5634e85406.setContent(html_e03fdff83ab469438ed808299fcc03c9);
+        
+
+        marker_09a44569111062372dd699e340654984.bindPopup(popup_21310e76222a5b0d1ba73d5634e85406)
+        ;
+
+        
+    
+    
+            marker_09a44569111062372dd699e340654984.bindTooltip(
+                `<div>
+                     San Fernando Valley (Area 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_969a2a8241e7e2bdd8700f6039361fb9 = L.marker(
+                [34.2168593, -118.3815062],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_648c050e8a3d9d1e22e686e43f48a8d9 = L.popup({"maxWidth": 300});
+
+        
+            var html_679bda2095eed1fba421f3b9c82c1e58 = $(`<div id="html_679bda2095eed1fba421f3b9c82c1e58" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Fernando Valley Area 1<br><b>History:</b> The San Fernando Valley has a history of industrial and commercial activities leading to groundwater contamination. The groundwater is contaminated with VOCs and other industrial solvents, impacting local water supplies. Four areas within the valley were designated as Superfund sites in the 1980s. Efforts include groundwater extraction and treatment, soil vapor extraction, and ongoing monitoring to protect public health.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19136' target='_blank'>More Info</a></div>`)[0];
+            popup_648c050e8a3d9d1e22e686e43f48a8d9.setContent(html_679bda2095eed1fba421f3b9c82c1e58);
+        
+
+        marker_969a2a8241e7e2bdd8700f6039361fb9.bindPopup(popup_648c050e8a3d9d1e22e686e43f48a8d9)
+        ;
+
+        
+    
+    
+            marker_969a2a8241e7e2bdd8700f6039361fb9.bindTooltip(
+                `<div>
+                     San Fernando Valley Area 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a63c4841d655441fa3518b2f11554cca = L.marker(
+                [34.1099637, -118.2472339],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_f4aeb307310e9e818219a60000e739aa = L.popup({"maxWidth": 300});
+
+        
+            var html_c7766e2de7ed17c2efa16f8a48f8d14a = $(`<div id="html_c7766e2de7ed17c2efa16f8a48f8d14a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Fernando Valley (Area 4)<br><b>History:</b> The San Fernando Valley has a history of industrial and commercial activities leading to groundwater contamination. The groundwater is contaminated with VOCs and other industrial solvents, impacting local water supplies. Four areas within the valley were designated as Superfund sites in the 1980s. Efforts include groundwater extraction and treatment, soil vapor extraction, and ongoing monitoring to protect public health.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19137' target='_blank'>More Info</a></div>`)[0];
+            popup_f4aeb307310e9e818219a60000e739aa.setContent(html_c7766e2de7ed17c2efa16f8a48f8d14a);
+        
+
+        marker_a63c4841d655441fa3518b2f11554cca.bindPopup(popup_f4aeb307310e9e818219a60000e739aa)
+        ;
+
+        
+    
+    
+            marker_a63c4841d655441fa3518b2f11554cca.bindTooltip(
+                `<div>
+                     San Fernando Valley (Area 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3625062d7b150e31c1ebd5c3e7c2999 = L.marker(
+                [34.0293784, -118.0633937],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_a53c0158cd3819ba7b282200c87c65ef = L.popup({"maxWidth": 300});
+
+        
+            var html_5157e21ffa177416afbb6aa59e6eda38 = $(`<div id="html_5157e21ffa177416afbb6aa59e6eda38" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Gabriel Valley (Area 1)<br><b>History:</b> The San Gabriel Valley encompasses multiple areas where industrial activities led to widespread groundwater contamination. The primary contaminants include VOCs, perchlorate, and other industrial chemicals affecting the aquifer, a crucial drinking water source for over one million residents. Four areas within the valley were designated as Superfund sites in the 1980s. Cleanup actions involve groundwater extraction and treatment systems, with ongoing efforts to monitor and remediate contamination.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19138' target='_blank'>More Info</a></div>`)[0];
+            popup_a53c0158cd3819ba7b282200c87c65ef.setContent(html_5157e21ffa177416afbb6aa59e6eda38);
+        
+
+        marker_f3625062d7b150e31c1ebd5c3e7c2999.bindPopup(popup_a53c0158cd3819ba7b282200c87c65ef)
+        ;
+
+        
+    
+    
+            marker_f3625062d7b150e31c1ebd5c3e7c2999.bindTooltip(
+                `<div>
+                     San Gabriel Valley (Area 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8161d77570cf59e5a029db2b88504649 = L.marker(
+                [33.8530704, -118.2933848],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_e680795251a4bf137fc2e4d265138d0b = L.popup({"maxWidth": 300});
+
+        
+            var html_70a185b76b5d954de55b2ca842eba9b6 = $(`<div id="html_70a185b76b5d954de55b2ca842eba9b6" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Del Amo Hazardous Waste Site<br><b>History:</b> The Del Amo facility produced synthetic rubber from 1943 to 1972. Operations led to soil and groundwater contamination with hazardous chemicals, including benzene and polycyclic aromatic hydrocarbons (PAHs). The site was added to the NPL in 2002 due to environmental and health risks. Remediation includes soil vapor extraction, groundwater treatment, and land use controls to prevent exposure.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19139' target='_blank'>More Info</a></div>`)[0];
+            popup_e680795251a4bf137fc2e4d265138d0b.setContent(html_70a185b76b5d954de55b2ca842eba9b6);
+        
+
+        marker_8161d77570cf59e5a029db2b88504649.bindPopup(popup_e680795251a4bf137fc2e4d265138d0b)
+        ;
+
+        
+    
+    
+            marker_8161d77570cf59e5a029db2b88504649.bindTooltip(
+                `<div>
+                     Del Amo Hazardous Waste Site
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa2e265b79acc8d666622ac2c56ba65 = L.marker(
+                [34.163142, -118.2859855],
+                {}
+            ).addTo(map_e7a9f12ace2d21a099531cce1283de60);
+        
+    
+        var popup_20ed3b0aa1cfb28106d6063c0a9a8d1c = L.popup({"maxWidth": 300});
+
+        
+            var html_93ebc15370c38eae70c76c6ed576bcc7 = $(`<div id="html_93ebc15370c38eae70c76c6ed576bcc7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> San Fernando Valley (Area 2)<br><b>History:</b> The San Fernando Valley has a history of industrial and commercial activities leading to groundwater contamination. The groundwater is contaminated with VOCs and other industrial solvents, impacting local water supplies. Four areas within the valley were designated as Superfund sites in the 1980s. Efforts include groundwater extraction and treatment, soil vapor extraction, and ongoing monitoring to protect public health.<br><b>Link:</b> <a href='http://egis3.lacounty.gov/lms/?p=19140' target='_blank'>More Info</a></div>`)[0];
+            popup_20ed3b0aa1cfb28106d6063c0a9a8d1c.setContent(html_93ebc15370c38eae70c76c6ed576bcc7);
+        
+
+        marker_4aa2e265b79acc8d666622ac2c56ba65.bindPopup(popup_20ed3b0aa1cfb28106d6063c0a9a8d1c)
+        ;
+
+        
+    
+    
+            marker_4aa2e265b79acc8d666622ac2c56ba65.bindTooltip(
+                `<div>
+                     San Fernando Valley (Area 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
