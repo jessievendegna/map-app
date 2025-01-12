@@ -1,150 +1,117 @@
-/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-    color: #4CAF50;
-    font-size: 2em;
-    margin: 10px;
-}
-
-/* Logo Box Styling */
-.logo-box {
-    background-color: white; /* Set the background to white */
-    padding: 10px; /* Add some space around the logo */
-    border-radius: 8px; /* Round the corners slightly */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    max-width: 120px; /* Limit the width of the logo box */
-    margin: 10px; /* Add spacing around the logo */
-    display: inline-block; /* Ensure it doesn't take up the full width */
-}
-
-/* Logo Image */
-.logo-box img {
-    display: block; /* Ensure the image is properly centered */
-    width: 100%; /* Ensure the image scales within the box */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Match the box corners */
-}
-
-
-/* Links */
-a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #007BFF;
-    font-size: 1em;
-    padding: 10px;
-    border: 1px solid #007BFF;
-    border-radius: 5px;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    transition: all 0.3s;
-}
-
-a:hover {
-    background-color: #007BFF;
+header {
+    background: #4CAF50;
     color: white;
-}
-
-/* Embedded Widgets */
-iframe {
+    padding: 10px 20px;
+    position: fixed;
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 20px 0;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Paragraphs */
-p {
-    font-size: 1em;
-    margin: 10px;
-    text-align: center;
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Weather Widget */
-.weatherwidget-io {
-    display: block;
-    margin: 10px 0;
-    text-align: center;
-    font-size: 1em;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
-    background-color: white; /* Changed logo box to white */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s;
 }
 
-/* Container for Links */
-.container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 10px;
+.navbar ul li a:hover {
+    color: #d4edda;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 60px;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero .cta:hover {
+    background: #45a049;
+}
+
+main section {
+    padding: 40px 20px;
     background: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8em;
-        margin: 10px;
-    }
-
-    a {
-        font-size: 1em;
-        padding: 10px;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .container {
-        padding: 10px;
-    }
+.widgets iframe,
+.maps ul li a {
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
 
-    a {
-        font-size: 0.9em;
-        padding: 8px;
-    }
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
 
-    p {
-        font-size: 0.9em;
-    }
-
-    .container {
-        padding: 8px;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
