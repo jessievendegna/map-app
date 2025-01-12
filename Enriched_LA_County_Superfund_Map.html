@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_57cdf2e94fcf32dd52fd04236f56fe4e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_57cdf2e94fcf32dd52fd04236f56fe4e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_57cdf2e94fcf32dd52fd04236f56fe4e = L.map(
+                "map_57cdf2e94fcf32dd52fd04236f56fe4e",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d2d4d02787ade46d0ba9d8a6178b1a59 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+            var marker_cab2bd7cf5c34b8a6fa3655a8d8f6ce7 = L.marker(
+                [33.838048, -118.293085],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_79a86c8287742e5baabe6a2f409df78c = L.popup({"maxWidth": 300});
+
+        
+            var html_fa8e5e63d0775552e5a39cb875e9d0fc = $(`<div id="html_fa8e5e63d0775552e5a39cb875e9d0fc" style="width: 100.0%; height: 100.0%;"><b>Del Amo Superfund Site</b><br>A former synthetic rubber manufacturing facility leading to soil and groundwater contamination.</div>`)[0];
+            popup_79a86c8287742e5baabe6a2f409df78c.setContent(html_fa8e5e63d0775552e5a39cb875e9d0fc);
+        
+
+        marker_cab2bd7cf5c34b8a6fa3655a8d8f6ce7.bindPopup(popup_79a86c8287742e5baabe6a2f409df78c)
+        ;
+
+        
+    
+    
+            var marker_6594d2f49094aafa5c150f15627bbffa = L.marker(
+                [34.137947, -119.17999],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_ab34c8a509a8818430fc4ebb7eb9d014 = L.popup({"maxWidth": 300});
+
+        
+            var html_2e038dfeb779172205801818d543e72c = $(`<div id="html_2e038dfeb779172205801818d543e72c" style="width: 100.0%; height: 100.0%;"><b>Montrose Chemical Corp. Superfund Site</b><br>The site of a former DDT manufacturing plant, resulting in significant contamination.</div>`)[0];
+            popup_ab34c8a509a8818430fc4ebb7eb9d014.setContent(html_2e038dfeb779172205801818d543e72c);
+        
+
+        marker_6594d2f49094aafa5c150f15627bbffa.bindPopup(popup_ab34c8a509a8818430fc4ebb7eb9d014)
+        ;
+
+        
+    
+    
+            var marker_7e67f2ab8f36c9b1429ef37a2b149cb3 = L.marker(
+                [33.851566, -118.292098],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_4e48cc5823edd990a18f1c0849750fe5 = L.popup({"maxWidth": 300});
+
+        
+            var html_169b14e53ed21a7a637d2187eb13981c = $(`<div id="html_169b14e53ed21a7a637d2187eb13981c" style="width: 100.0%; height: 100.0%;"><b>Operating Industries Inc. Landfill</b><br>A landfill that accepted industrial waste, contaminating groundwater and releasing gas emissions.</div>`)[0];
+            popup_4e48cc5823edd990a18f1c0849750fe5.setContent(html_169b14e53ed21a7a637d2187eb13981c);
+        
+
+        marker_7e67f2ab8f36c9b1429ef37a2b149cb3.bindPopup(popup_4e48cc5823edd990a18f1c0849750fe5)
+        ;
+
+        
+    
+    
+            var marker_0da7858c1aeee288f08c160fd53b5a2c = L.marker(
+                [33.951707, -118.065091],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_95549c7793baf2341cae0177dbd6fc41 = L.popup({"maxWidth": 300});
+
+        
+            var html_8ada011b5ce01742f36f4c554bcdf1cb = $(`<div id="html_8ada011b5ce01742f36f4c554bcdf1cb" style="width: 100.0%; height: 100.0%;"><b>Pemaco Maywood Superfund Site</b><br>A former chemical mixing site with VOC and hazardous substance contamination.</div>`)[0];
+            popup_95549c7793baf2341cae0177dbd6fc41.setContent(html_8ada011b5ce01742f36f4c554bcdf1cb);
+        
+
+        marker_0da7858c1aeee288f08c160fd53b5a2c.bindPopup(popup_95549c7793baf2341cae0177dbd6fc41)
+        ;
+
+        
+    
+    
+            var marker_b7db7154317cdb236c4eb6248605574e = L.marker(
+                [33.94763, -118.17989],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_468cb317a6a63628809cd7e4909f9845 = L.popup({"maxWidth": 300});
+
+        
+            var html_08fc0c751113be7f1ebaf9db0cf87db6 = $(`<div id="html_08fc0c751113be7f1ebaf9db0cf87db6" style="width: 100.0%; height: 100.0%;"><b>Waste Disposal Inc. Superfund Site</b><br>A former waste disposal site contaminated with hazardous chemicals affecting soil and groundwater.</div>`)[0];
+            popup_468cb317a6a63628809cd7e4909f9845.setContent(html_08fc0c751113be7f1ebaf9db0cf87db6);
+        
+
+        marker_b7db7154317cdb236c4eb6248605574e.bindPopup(popup_468cb317a6a63628809cd7e4909f9845)
+        ;
+
+        
+    
+    
+            var marker_b8f57a9a51692bf475bb47a8ffeda053 = L.marker(
+                [33.894096, -117.972743],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_d321a7f141c3024dbf66943f39ac266b = L.popup({"maxWidth": 300});
+
+        
+            var html_5d1143be744a8eecd43340a3e4109f18 = $(`<div id="html_5d1143be744a8eecd43340a3e4109f18" style="width: 100.0%; height: 100.0%;"><b>Cooper Drum Company Superfund Site</b><br>A drum reconditioning site leading to soil and groundwater contamination.</div>`)[0];
+            popup_d321a7f141c3024dbf66943f39ac266b.setContent(html_5d1143be744a8eecd43340a3e4109f18);
+        
+
+        marker_b8f57a9a51692bf475bb47a8ffeda053.bindPopup(popup_d321a7f141c3024dbf66943f39ac266b)
+        ;
+
+        
+    
+    
+            var marker_01ac63f4ac4757e91b3758648e98eb4c = L.marker(
+                [34.40279, -118.904198],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_b2059df63b49ecfcbc8402afbf4cd4c5 = L.popup({"maxWidth": 300});
+
+        
+            var html_47fb7a9fe286f6d4e4c4187f8f863fb2 = $(`<div id="html_47fb7a9fe286f6d4e4c4187f8f863fb2" style="width: 100.0%; height: 100.0%;"><b>Omega Chemical Corporation Superfund Site</b><br>A former recycling facility contaminated with PCE, TCE, and Freons.</div>`)[0];
+            popup_b2059df63b49ecfcbc8402afbf4cd4c5.setContent(html_47fb7a9fe286f6d4e4c4187f8f863fb2);
+        
+
+        marker_01ac63f4ac4757e91b3758648e98eb4c.bindPopup(popup_b2059df63b49ecfcbc8402afbf4cd4c5)
+        ;
+
+        
+    
+    
+            var marker_ccffe648d92ed6fd0d179e89a3f3d608 = L.marker(
+                [33.985544, -118.17218],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_3f3006d9eeeb844a1a15eddb25cd68e7 = L.popup({"maxWidth": 300});
+
+        
+            var html_64e09eb6d1ae6594ae0498d9d538cf32 = $(`<div id="html_64e09eb6d1ae6594ae0498d9d538cf32" style="width: 100.0%; height: 100.0%;"><b>San Gabriel Valley (Area 1) Superfund Site</b><br>Groundwater contamination from industrial solvents in Alhambra, CA.</div>`)[0];
+            popup_3f3006d9eeeb844a1a15eddb25cd68e7.setContent(html_64e09eb6d1ae6594ae0498d9d538cf32);
+        
+
+        marker_ccffe648d92ed6fd0d179e89a3f3d608.bindPopup(popup_3f3006d9eeeb844a1a15eddb25cd68e7)
+        ;
+
+        
+    
+    
+            var marker_3e6346764426b2e3cec5ec27dfe222f6 = L.marker(
+                [33.949535, -118.056767],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_903f4db9dd369bb60f5b490b188133ad = L.popup({"maxWidth": 300});
+
+        
+            var html_3b27f08aaf38f86f7658cb7156df7450 = $(`<div id="html_3b27f08aaf38f86f7658cb7156df7450" style="width: 100.0%; height: 100.0%;"><b>San Gabriel Valley (Area 2) Superfund Site</b><br>Groundwater contamination from industrial solvents in El Monte, CA.</div>`)[0];
+            popup_903f4db9dd369bb60f5b490b188133ad.setContent(html_3b27f08aaf38f86f7658cb7156df7450);
+        
+
+        marker_3e6346764426b2e3cec5ec27dfe222f6.bindPopup(popup_903f4db9dd369bb60f5b490b188133ad)
+        ;
+
+        
+    
+    
+            var marker_afe7a6b726ecd9673f9e1634b60cbc38 = L.marker(
+                [34.190491, -118.228786],
+                {}
+            ).addTo(map_57cdf2e94fcf32dd52fd04236f56fe4e);
+        
+    
+        var popup_a42824367a28b5b07733e63602446ce4 = L.popup({"maxWidth": 300});
+
+        
+            var html_88ce85d678ef9067a3097c16d4f43ac4 = $(`<div id="html_88ce85d678ef9067a3097c16d4f43ac4" style="width: 100.0%; height: 100.0%;"><b>San Gabriel Valley (Area 3) Superfund Site</b><br>Groundwater contamination from industrial activities in Baldwin Park, CA.</div>`)[0];
+            popup_a42824367a28b5b07733e63602446ce4.setContent(html_88ce85d678ef9067a3097c16d4f43ac4);
+        
+
+        marker_afe7a6b726ecd9673f9e1634b60cbc38.bindPopup(popup_a42824367a28b5b07733e63602446ce4)
+        ;
+
+        
+    
+</script>
+</html>
