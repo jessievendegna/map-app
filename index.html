@@ -8,14 +8,13 @@
     <meta property="og:title" content="Hazards Near Me!">
     <meta property="og:description" content="Interactive maps and widgets showcasing hazards around Los Angeles.">
     <meta property="og:image" content="preview-image.jpg">
-    <meta property="og:url" content="https://example.com">
+    <meta property="og:url" content="https://hazardsnearme.org">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Hazards Near Me</title>
 </head>
 
 <body>
-    <!-- Header with Navigation -->
     <header>
         <div class="container">
             <div class="logo-box">
@@ -33,56 +32,41 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to Hazards Near Me</h1>
             <p>Your one-stop destination for environmental hazard updates and interactive maps in Los Angeles County.</p>
+            <a href="#widgets" class="cta">Get Started</a>
         </div>
     </section>
 
-    <!-- Live Updates Section -->
     <main>
         <section id="widgets" class="widgets">
             <h2>Live Updates</h2>
-            <iframe 
-                title="Los Angeles AQI" 
-                src="https://widget.airnow.gov/aq-dial-widget/?city=Los Angeles&state=CA&country=USA" 
-                class="responsive-iframe">
-            </iframe>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us" 
-               data-label_1="LOS ANGELES" data-label_2="WEATHER" data-font="Monaco" data-theme="weather_one">
-               LOS ANGELES WEATHER
-            </a>
+            <iframe title="Los Angeles AQI" src="https://widget.airnow.gov/aq-dial-widget/?city=Los Angeles&state=CA&country=USA"></iframe>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us" data-label_1="LOS ANGELES" data-label_2="WEATHER" data-font="Monaco" data-theme="weather_one">LOS ANGELES WEATHER</a>
         </section>
 
-        <!-- Hazard Maps Section -->
         <section id="maps" class="maps">
             <h2>Explore Hazard Maps</h2>
-            <nav>
-                <ul>
-                    <li><a href="Final_Interactive_Map_With_Toggles_And_Clusters%20(1).html">Oil Well Map</a></li>
-                    <li><a href="la_county_oil_refineries_updated_map.html">Oil Refineries Map</a></li>
-                    <li><a href="interactive_map_los_angeles_decades.html">Wildfires Through The Decades Map</a></li>
-                    <li><a href="Updated_Superfund_Sites_Map.html">EPA Superfund Sites Map</a></li>
-                    <li><a href="Hazardous_Waste_Sites_Enhanced_Map.html">General Toxic Substance Control Records Map</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="Final_Interactive_Map_With_Toggles_And_Clusters%20(1).html">Oil Well Map</a></li>
+                <li><a href="la_county_oil_refineries_updated_map.html">Oil Refineries Map</a></li>
+                <li><a href="interactive_map_los_angeles_decades.html">Wildfires Through The Decades Map</a></li>
+                <li><a href="Updated_Superfund_Sites_Map.html">EPA Superfund Sites Map</a></li>
+                <li><a href="Hazardous_Waste_Sites_Enhanced_Map.html">General Toxic Substance Control Records Map</a></li>
+            </ul>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="about">
             <h2>About Us</h2>
             <p>Hazards Near Me is dedicated to providing up-to-date information on environmental hazards in Los Angeles County. Our platform includes real-time widgets, detailed maps, and resources to help you stay informed and safe.</p>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Hazards Near Me. All rights reserved.</p>
-            <p><a href="#top">Back to top</a></p>
-        </div>
+        <p>&copy; 2025 Hazards Near Me. All rights reserved.</p>
+        <p><a href="#top">Back to top</a></p>
     </footer>
 
     <script src="https://weatherwidget.io/js/widget.min.js"></script>
