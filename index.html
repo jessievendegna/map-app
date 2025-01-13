@@ -19,10 +19,10 @@
         <div class="container">
             <div class="logo-box">
                 <a href="/">
-                    <img src="logo.png" alt="Hazards Near Me Logo" />
+                    <img src="logo.png" alt="Hazards Near Me Logo" loading="lazy" />
                 </a>
             </div>
-            <nav class="navbar">
+            <nav class="navbar" role="navigation">
                 <ul>
                     <li><a href="#widgets">Live Updates</a></li>
                     <li><a href="#maps">Hazard Maps</a></li>
@@ -40,29 +40,29 @@
         </div>
     </section>
 
-    <main>
-    <section id="widgets" class="widgets">
-    <h2>Live Updates</h2>
-    <div class="widget-container">
-        <!-- AQI Widget -->
-        <iframe
-            title="Los Angeles AQI"
-            src="https://widget.airnow.gov/aq-dial-widget/?city=Los Angeles&state=CA&country=USA"
-            class="aqi-widget">
-        </iframe>
+    <main role="main">
+        <section id="widgets" class="widgets">
+            <h2>Live Updates</h2>
+            <div class="widget-container">
+                <!-- AQI Widget -->
+                <iframe
+                    title="Los Angeles AQI"
+                    src="https://widget.airnow.gov/aq-dial-widget/?city=Los Angeles&state=CA&country=USA"
+                    class="aqi-widget">
+                </iframe>
 
-        <!-- Weather Widget -->
-        <a
-            class="weatherwidget-io"
-            href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us"
-            data-label_1="LOS ANGELES"
-            data-label_2="WEATHER"
-            data-font="Monaco"
-            data-theme="original">
-            LOS ANGELES WEATHER
-        </a>
-    </div>
-    </section>
+                <!-- Weather Widget -->
+                <a
+                    class="weatherwidget-io"
+                    href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us"
+                    data-label_1="LOS ANGELES"
+                    data-label_2="WEATHER"
+                    data-font="Monaco"
+                    data-theme="original">
+                    LOS ANGELES WEATHER
+                </a>
+            </div>
+        </section>
 
         <section id="maps" class="maps">
             <h2>Explore Hazard Maps</h2>
@@ -82,8 +82,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Hazards Near Me.Org. All rights reserved.</p>
-        <p><a href="#top">Back to top</a></p>
+        <p>&copy; 2025 Hazards Near Me.Org. All rights reserved. <a href="#top">Back to top</a></p>
     </footer>
 
     <script src="https://weatherwidget.io/js/widget.min.js"></script>
