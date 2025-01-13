@@ -191,7 +191,7 @@ main section {
     }
 
     .navbar ul {
-        gap: 10px; /* Add spacing between navigation links */
+        gap: 3px; /* Add spacing between navigation links */
     }
 
     .navbar ul li {
