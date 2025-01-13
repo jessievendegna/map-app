@@ -179,35 +179,34 @@ main section {
 
 @media (max-width: 768px) {
     .logo-box img {
-        max-width: 100px; /* Adjust the logo size */
-        height: auto;
-        margin: 0 auto; /* Center the logo */
-    }
-    .logo-box {
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
+        max-width: 100px; /* Restrict the logo's maximum width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the logo horizontally */
+        margin-bottom: 10px; /* Add spacing below the logo */
+        display: block; /* Ensure the image behaves as a block element */
+        text-align: center; /* This won't affect the image; it's redundant */
     }
 
     .navbar {
-        flex-direction: column;
-        align-items: flex-start; 
+        flex-direction: column; /* Stack logo and nav links vertically */
+        align-items: center; /* Center-align the logo and nav links */
     }
 
     .navbar ul {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
+        display: flex; /* Ensure the navigation links are flex items */
+        flex-direction: row; /* Layout links in a horizontal line */
+        justify-content: center; /* Center the links horizontally */
+        gap: 15px; /* Add space between links */
+        padding: 0; /* Remove any default padding for clean layout */
+        width: auto; /* Let links take their natural width */
     }
 
     .navbar ul li {
-        width: auto; 
+        width: auto; /* Ensure each list item takes only the space it needs */
     }
 
     .navbar ul li a {
-        display: inline-block;
-        width: auto;
+        padding: 10px; /* Add spacing around the links for better touch targets */
     }
 
     .hero {
