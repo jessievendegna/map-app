@@ -32,9 +32,9 @@ header .container {
 }
 
 .logo-box img {
-    max-width: 150px; /* Set a maximum width */
-    width: 100%; /* Ensure it scales properly */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 450px;
+    width: 100%; 
+    height: auto; 
 }
 
 
