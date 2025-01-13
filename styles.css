@@ -191,6 +191,13 @@ main section {
     .widget-container {
         gap: 15px;
     }
+
+    /* Adjust logo size for smaller screens */
+    .logo-box img {
+        max-width: 150px; /* Constrain the maximum width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the logo */
+    }
 }
 
 footer {
