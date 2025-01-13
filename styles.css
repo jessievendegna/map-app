@@ -129,32 +129,6 @@ main section {
     border-radius: 10px;
 }
 
-.widgets iframe,
-.maps ul li a {
-    display: block;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin: 10px auto;
-    max-width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-.logo-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: white;
-}
-
-.logo-box img {
-    max-width: 300px;
-    border-radius: 8px;
-}
-
 .widgets {
     padding: 20px;
     background: #f9f9f9;
@@ -173,18 +147,27 @@ main section {
 
 .widget-container {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between widgets */
+    flex-wrap: wrap; /* Ensure widgets wrap on smaller screens */
+}
+
+.widget {
+    display: block;
+    width: 300px; /* Ensure consistent width */
+    height: 300px; /* Ensure consistent height */
+    border: 1px solid #ddd; /* Optional: Add borders for styling */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadows */
+    border-radius: 8px; /* Optional: Rounded corners */
 }
 
 .aqi-widget,
 .weatherwidget-io {
-    width: 100%;
-    max-width: 700px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
