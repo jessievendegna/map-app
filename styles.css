@@ -23,8 +23,18 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+.navbar {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+}
 
 .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     display: flex;
@@ -39,6 +49,7 @@ header .container {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em;
     transition: color 0.3s;
 }
 
@@ -130,6 +141,21 @@ main section {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack the navbar vertically on smaller screens */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    .navbar ul li {
+        margin: 5px 0; /* Add spacing for vertical links */
+    }
 }
 
 footer {
