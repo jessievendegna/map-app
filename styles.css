@@ -206,7 +206,7 @@ main section {
         display: flex; /* Use flexbox for navigation links */
         flex-direction: row; /* Arrange links horizontally */
         justify-content: center; /* Center the links */
-        gap: 15px; /* Add space between links */
+        gap: 5px; /* Add space between links */
         padding: 0; /* Remove any default padding */
         margin: 0; /* Remove default margin */
         width: auto; /* Allow links to size naturally */
