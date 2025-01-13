@@ -152,17 +152,69 @@ main section {
     margin: 0 auto;
 }
 
+.widgets {
+    padding: 20px;
+    background: #f9f9f9;
+    margin: 20px auto;
+    max-width: 800px; /* Center and control max width */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.widgets h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between widgets */
+    align-items: center;
+}
+
+/* AQI Widget */
+.aqi-widget {
+    width: 100%;
+    max-width: 700px; /* Ensure it doesn’t overflow */
+    height: 300px; /* Adjust height for better readability */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Weather Widget */
 .weatherwidget-io {
     display: block;
+    width: 100%;
+    max-width: 700px; /* Ensure it matches AQI widget */
+    padding: 20px;
+    border-radius: 10px;
     background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .widgets {
+        padding: 10px;
+    }
+
+    .widget-container {
+        gap: 15px;
+    }
+
+    .aqi-widget,
+    .weatherwidget-io {
+        max-width: 100%;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+    }
+}
+
 
 @media (max-width: 768px) {
     .navbar {
