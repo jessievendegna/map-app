@@ -185,8 +185,8 @@ main section {
     }
 
     .navbar {
-        flex-direction: column;
-        align-items: flex-start; /* Align links to the left */
+        flex-direction: row;
+        align-items: center; /* Align links to the left */
         padding: 10px; /* Add some padding for spacing */
     }
 
