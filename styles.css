@@ -58,7 +58,7 @@ header .container {
 }
 
 .hero {
-    background: url('your-image.jpg') no-repeat center center;
+    background: url('heroimage1.PNG') no-repeat center center;
     background-size: cover; /* Ensures the image covers the entire area */
     position: relative; /* Enables overlay */
     height: 100vh; /* Adjust height as needed */
