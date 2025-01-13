@@ -52,15 +52,34 @@
                 </iframe>
 
                 <!-- Weather Widget -->
-                <a
-                    class="weatherwidget-io"
-                    href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us"
-                    data-label_1="LOS ANGELES"
-                    data-label_2="WEATHER"
-                    data-font="Monaco"
-                    data-theme="original">
-                    LOS ANGELES WEATHER
-                </a>
+                <div 
+                    id="ww_d328e30882078" 
+                    v="1.3" 
+                    loc="id" 
+                    a='{
+                        "t": "horizontal",
+                        "lang": "en",
+                        "sl_lpl": 1,
+                        "ids": ["wl3998"],
+                        "font": "Arial",
+                        "sl_ics": "one_a",
+                        "sl_sot": "fahrenheit",
+                        "cl_bkg": "image",
+                        "cl_font": "#FFFFFF",
+                        "cl_cloud": "#FFFFFF",
+                        "cl_persp": "#81D4FA",
+                        "cl_sun": "#FFC107",
+                        "cl_moon": "#FFC107",
+                        "cl_thund": "#FF5722"
+                    }'>
+                    More forecasts: 
+                    <a 
+                        href="https://oneweather.org/new_york_city/30_days/" 
+                        id="ww_d328e30882078_u" 
+                        target="_blank">
+                        New York 30 day forecast
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -85,7 +104,8 @@
         <p>&copy; 2025 Hazards Near Me.Org. All rights reserved. <a href="#top">Back to top</a></p>
     </footer>
 
-    <script src="https://weatherwidget.io/js/widget.min.js"></script>
+    <script async src="https://app3.weatherwidget.org/js/?id=ww_d328e30882078">
+    </script>
 </body>
 
 </html>
