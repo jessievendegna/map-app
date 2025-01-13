@@ -31,6 +31,13 @@ header .container {
     justify-content: space-between;
 }
 
+.logo-box img {
+    max-width: 150px; /* Set a maximum width */
+    width: 100%; /* Ensure it scales properly */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
