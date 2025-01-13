@@ -183,26 +183,31 @@ main section {
         height: auto;
         margin: 0 auto; /* Center the logo */
     }
+    .logo-box {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
 
     .navbar {
-        flex-direction: row;
-        align-items: center; /* Align links to the left */
-        padding: 10px; /* Add some padding for spacing */
+        flex-direction: column;
+        align-items: flex-start; 
     }
 
     .navbar ul {
-        gap: 3px; /* Add spacing between navigation links */
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
     }
 
     .navbar ul li {
-        width: 100%; /* Ensure full-width list items */
-        text-align: center; /* Optional: Center align navigation links */
+        width: auto; 
     }
 
     .navbar ul li a {
-        padding: 10px 0; /* Increase clickable area */
-        display: block;
-        width: 100%; /* Full-width clickable links */
+        display: inline-block;
+        width: auto;
     }
 
     .hero {
