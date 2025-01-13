@@ -171,33 +171,57 @@ main section {
 }
 
 @media (max-width: 768px) {
+    .logo-box img {
+        max-width: 100px; /* Adjust the logo size */
+        height: auto;
+        margin: 0 auto; /* Center the logo */
+    }
+
     .navbar {
         flex-direction: column;
+        align-items: flex-start; /* Align links to the left */
+        padding: 10px; /* Add some padding for spacing */
     }
 
     .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
+        gap: 10px; /* Add spacing between navigation links */
     }
 
     .navbar ul li {
-        margin: 5px 0;
+        width: 100%; /* Ensure full-width list items */
+        text-align: center; /* Optional: Center align navigation links */
     }
 
-    .widgets {
-        padding: 10px;
+    .navbar ul li a {
+        padding: 10px 0; /* Increase clickable area */
+        display: block;
+        width: 100%; /* Full-width clickable links */
     }
 
-    .widget-container {
-        gap: 15px;
+    .hero {
+        background-size: contain; /* Scale background image */
+        height: auto; /* Adjust height for better fit */
+        padding: 50px 10px;
     }
 
-    /* Adjust logo size for smaller screens */
-    .logo-box img {
-        max-width: 150px; /* Constrain the maximum width */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center the logo */
+    .hero h1 {
+        font-size: 1.8em; /* Reduce font size for smaller screens */
     }
+
+    .hero p {
+        font-size: 1em; /* Smaller text for better readability */
+    }
+
+    .hero .cta {
+        padding: 8px 15px; /* Adjust button size for mobile */
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
 }
 
 footer {
